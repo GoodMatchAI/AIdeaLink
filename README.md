@@ -15,6 +15,27 @@ This project reimagines wealth management by facilitating founder-investor match
 - Provides transparent reasoning and trade-offs (e.g., "High fit, but prefers later stages").
 - Supports collaboration with simulated co-investment suggestions.
 
+## Project Structure
+A high-level overview of the project's file structure.
+
+```bash
+.
+├── .env
+├── .gitignore
+├── main.py
+├── README.md
+├── requirements.txt
+├── scripts/
+│   ├── generate_profiles.py
+│   ├── load_data.py
+│   └── profiles.json
+└── src/
+    ├── __init__.py
+    ├── agents.py
+    ├── crew.py
+    └── tools.py
+```
+
 ## Getting Started
 
 ### Prerequisites
