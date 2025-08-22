@@ -1,0 +1,7 @@
+crewai
+weaviate-client
+comet_ml
+requests
+faker
+python-dotenv
+friendli
