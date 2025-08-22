@@ -1,6 +1,6 @@
 # AIdeaLink
 
-AIdeaLink is an AI-driven tool that matches startup founders with early-stage investors using agentic AI. Built for the GoodFin x AWS AI Hack Day Challenge, it leverages synthetic profiles and transparent reasoning to connect innovative ideas with capital.
+AIdeaLink is an AI-driven tool that matches startup founders with early-stage investors using agentic AI. Built for the GoodFin x AWS [AI Hack Day](https://lu.ma/aws-08-22-25) Challenge, it leverages synthetic profiles and transparent reasoning to connect innovative ideas with capital.
 
 ## Overview
 
