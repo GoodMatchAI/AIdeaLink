@@ -42,6 +42,7 @@ services:
       - OPENAI_DEPLOYMENT_NAME=${OPENAI_DEPLOYMENT_NAME}
       - PYTHONUNBUFFERED=1
       - LITELLM_DEBUG=true
+      - LITELLM_LOG_LEVEL=DEBUG
     stdin_open: true
     tty: true
   data-loader:
