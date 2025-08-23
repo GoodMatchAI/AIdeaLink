@@ -1,7 +1,7 @@
 import os
 import json
 import weaviate
-import weaviate.classes as wvc
+import weaviate.classes.config as wvc
 from dotenv import load_dotenv
 
 load_dotenv()
