@@ -27,6 +27,15 @@ services:
       EXTENSIONS_STORAGE_ORIGIN: http://weaviate:8080
       NEIGHBOR_OCCURRENCE_IGNORE_PERCENTILE: 5
       ENABLE_COMPOUND_SPLITTING: 'false'
+  app:
+    build:
+      context: .
+    depends_on:
+      weaviate:
+        condition: service_healthy
+    command: python main.py
+    stdin_open: true
+    tty: true
   data-loader:
     profiles: ["tools"]
     build:
