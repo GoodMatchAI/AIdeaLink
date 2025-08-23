@@ -9,7 +9,7 @@ A step-by-step plan to build the AIdeaLink project for the GoodFin x AWS AI Hack
 - [ ] Create a `src/` directory for the core application logic.
 - [ ] Create a `.gitignore` file to exclude `venv/`, `__pycache__/`, `.env`, and other non-essential files.
 - [ ] Create a `requirements.txt` file and add the dependencies: `crewai`, `weaviate-client`, `comet_ml`, `requests`, `faker`, `python-dotenv`, `friendli`.
-- [ ] Create the `.env` file with `FRIENDLI_API_KEY` and `WEAVIATE_URL` variables.
+- [ ] Create the `.env` file with `FRIENDLI_TOKEN` and `WEAVIATE_URL` variables.
 - [ ] Start the Weaviate Docker container.
 
 ## Phase 1: Data Ingestion Pipeline

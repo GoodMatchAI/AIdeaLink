@@ -46,7 +46,7 @@ A high-level overview of the project's file structure.
 1. Clone the repo: `git clone https://github.com/GoodMatchAI/AIdeaLink.git`
 2. Install API keys (e.g., FriendliAI, Weaviate) in a `.env` file:
    ```
-   FRIENDLI_API_KEY=your_key
+   FRIENDLI_TOKEN=your_key
    WEAVIATE_URL=http://localhost:8080
    ```
 3. Generate synthetic data: Run `python generate_profiles.py` (see scripts/).

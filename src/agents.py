@@ -3,7 +3,7 @@ from friendli import Friendli
 import os
 
 # Initialize the Friendli client
-friendli = Friendli(api_key=os.getenv("FRIENDLI_API_KEY"))
+friendli = Friendli(api_key=os.getenv("FRIENDLI_TOKEN"))
 
 # Define the ProfileAnalysisAgent
 profile_analysis_agent = Agent(

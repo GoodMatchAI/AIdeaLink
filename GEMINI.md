@@ -72,7 +72,7 @@ The project is organized as follows:
 3.  **Setup:**
     *   Create a `.env` file in the root directory and add your API keys:
         ```
-        FRIENDLI_API_KEY=your_key
+        FRIENDLI_TOKEN=your_key
         WEAVIATE_URL=http://localhost:8080
         ```
     *   Start Weaviate using Docker: `docker run -d -p 8080:8080 semitechnologies/weaviate`
