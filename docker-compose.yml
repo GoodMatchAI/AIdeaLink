@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  weaviate:
+    image: semitechnologies/weaviate:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./weaviate_data:/var/lib/weaviate
+    environment:
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+      DEFAULT_VECTORIZER_MODULE: 'text2vec-contextionary'
+      ENABLE_MODULES: 'text2vec-contextionary'
+      CONTEXTIONARY_URL: contextionary:9999
+      QUERY_DEFAULTS_LIMIT: 25
+      CLUSTER_HOSTNAME: 'node1'

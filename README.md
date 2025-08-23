@@ -50,7 +50,7 @@ A high-level overview of the project's file structure.
    WEAVIATE_URL=http://localhost:8080
    ```
 3. Generate synthetic data: Run `python generate_profiles.py` (see scripts/).
-4. Start Weaviate locally: `docker run -d -p 8080:8080 semitechnologies/weaviate`
+4. Start Weaviate locally: `docker compose up -d`
 5. Install and run: `pip install -r requirements.txt` then `python main.py`
 
 ## Usage

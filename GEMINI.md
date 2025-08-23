@@ -75,7 +75,7 @@ The project is organized as follows:
         FRIENDLI_TOKEN=your_key
         WEAVIATE_URL=http://localhost:8080
         ```
-    *   Start Weaviate using Docker: `docker run -d -p 8080:8080 semitechnologies/weaviate`
+    *   Start Weaviate using Docker Compose: `docker compose up -d`
     *   Generate the synthetic data: `python scripts/generate_profiles.py`
 
 4.  **Running the Application:**
