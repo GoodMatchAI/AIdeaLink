@@ -40,18 +40,34 @@ A high-level overview of the project's file structure.
 
 ### Prerequisites
 - Python 3.9+
-- Install dependencies: `pip install crewai weaviate-client comet_ml requests faker`
+- Docker
 
 ### Setup
 1. Clone the repo: `git clone https://github.com/GoodMatchAI/AIdeaLink.git`
-2. Install API keys (e.g., FriendliAI, Weaviate) in a `.env` file:
+2. Create a `.env` file and add your FriendliAI token:
    ```
    FRIENDLI_TOKEN=your_key
-   WEAVIATE_URL=http://localhost:8080
    ```
-3. Generate synthetic data: Run `python generate_profiles.py` (see scripts/).
-4. Start Weaviate locally: `docker compose up -d`
-5. Install and run: `pip install -r requirements.txt` then `python main.py`
+3. Start the services:
+   ```bash
+   docker compose up -d
+   ```
+4. Load the data (only needs to be done once):
+   ```bash
+   docker compose --profile tools up --build -d
+   ```
+
+## Demo
+
+1.  **Attach to the running application:**
+    ```bash
+    docker compose attach app
+    ```
+2.  **Enter a founder profile at the prompt.** Here are some examples:
+    *   `"AI startup for healthcare diagnostics, seeking $500k in seed funding."`
+    *   `"A B2B SaaS platform for remote team collaboration, looking for a $250k pre-seed investment."`
+    *   `"Mobile-first neobank for gig economy workers, raising a $1.2M seed round."`
+3.  **Review the results.** The application will output the top 3 investor matches with detailed reasoning and trade-offs for each match.
 
 ## Usage
 - Input a founder profile (e.g., "AI startup, $500k seed").
