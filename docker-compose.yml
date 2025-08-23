@@ -28,6 +28,7 @@ services:
       NEIGHBOR_OCCURRENCE_IGNORE_PERCENTILE: 5
       ENABLE_COMPOUND_SPLITTING: 'false'
   data-loader:
+    profiles: ["tools"]
     build:
       context: .
     depends_on:
