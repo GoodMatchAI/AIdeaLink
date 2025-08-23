@@ -1,11 +1,6 @@
 from crewai import Crew, Task
 from src.agents import profile_analysis_agent, investor_scouting_agent, matchmaking_agent
 from src.tools import WeaviateQueryTool
-import comet_ml
-import os
-
-# Initialize Comet ML
-comet_ml.init(project_name="AIdeaLink")
 
 # Create an instance of the WeaviateQueryTool
 weaviate_tool = WeaviateQueryTool()
@@ -35,6 +30,6 @@ matchmaking_task = Task(
 aidea_link_crew = Crew(
     agents=[profile_analysis_agent, investor_scouting_agent, matchmaking_agent],
     tasks=[profile_analysis_task, investor_scouting_task, matchmaking_task],
-    verbose=2
+    verbose=True
 )
 
