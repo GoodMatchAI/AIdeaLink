@@ -6,7 +6,7 @@ azure_llm = LLM(
     model=os.getenv("OPENAI_DEPLOYMENT_NAME"),
     api_key=os.getenv("OPENAI_API_KEY"),
     api_base=os.getenv("OPENAI_ENDPOINT"),
-    api_version="2024-02-01",
+    api_version=os.getenv("OPENAI_API_VERSION"),
     api_type="azure"
 )
 
