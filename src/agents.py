@@ -1,12 +1,12 @@
 from crewai import Agent
-from langchain_openai import ChatOpenAI
+from crewai.utilities import LiteLLM
 import os
 
-# Initialize the Friendli LLM using the ChatOpenAI class
-friendli_llm = ChatOpenAI(
-    base_url="https://api.friendli.ai/serverless/v1",
+# Initialize the Friendli LLM using LiteLLM
+friendli_llm = LiteLLM(
+    model="friendli/meta-llama-3.1-8b-instruct",
     api_key=os.getenv("FRIENDLI_TOKEN"),
-    model="friendli/meta-llama-3.1-8b-instruct"
+    base_url="https://api.friendli.ai/serverless/v1"
 )
 
 # Define the ProfileAnalysisAgent
