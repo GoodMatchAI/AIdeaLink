@@ -33,4 +33,4 @@ services:
     depends_on:
       weaviate:
         condition: service_healthy
-    command: python scripts/load_data.py
+    command: bash -c "python scripts/generate_profiles.py && python scripts/load_data.py"
