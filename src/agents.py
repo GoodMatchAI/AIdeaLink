@@ -3,9 +3,9 @@ import os
 
 # Initialize the Friendli LLM using CrewAI's LLM class
 friendli_llm = LLM(
-    model="friendli/meta-llama-3.1-8b-instruct",
+    model="mistralai/Magistral-Small-2506",
     api_key=os.getenv("FRIENDLI_TOKEN"),
-    api_base="https://api.friendli.ai/serverless/v1"
+    api_base="https://api.friendli.ai/serverless/v1/chat/completions"
 )
 
 # Define the ProfileAnalysisAgent
