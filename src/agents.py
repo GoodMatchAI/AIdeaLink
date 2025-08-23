@@ -1,13 +1,13 @@
 from crewai import Agent, LLM
 import os
 
+# Construct the full Azure OpenAI API base URL
+azure_api_base = f"{os.getenv("OPENAI_ENDPOINT")}/openai/deployments/{os.getenv("OPENAI_DEPLOYMENT_NAME")}/chat/completions?api-version={os.getenv("OPENAI_API_VERSION")}"
+
 # Initialize the Azure OpenAI LLM using CrewAI's LLM class
 azure_llm = LLM(
-    model=os.getenv("OPENAI_DEPLOYMENT_NAME"),
     api_key=os.getenv("OPENAI_API_KEY"),
-    api_base=os.getenv("OPENAI_ENDPOINT"),
-    api_version=os.getenv("OPENAI_API_VERSION"),
-    api_type="azure"
+    api_base=azure_api_base,
 )
 
 # Define the ProfileAnalysisAgent
