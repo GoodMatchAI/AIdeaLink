@@ -2,7 +2,8 @@ from src.crew import aidea_link_crew
 
 def main():
     """Main function to run the AIdeaLink crew."""
-    founder_profile = input("Please enter the founder profile (e.g., 'AI startup, $500k seed'): ")
+    print("Please enter the founder profile (e.g., 'AI startup, $500k seed'): ")
+    founder_profile = input()
     if founder_profile:
         result = aidea_link_crew.kickoff(inputs={'founder_profile': founder_profile})
         print("\n\nFinal Report:")
