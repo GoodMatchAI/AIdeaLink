@@ -3,9 +3,8 @@ import os
 
 # Initialize the Friendli LLM using CrewAI's LLM class
 friendli_llm = LLM(
-    model="mistralai/Magistral-Small-2506",
-    api_key=os.getenv("FRIENDLI_TOKEN"),
-    api_base="https://api.friendli.ai/serverless/v1"
+    model="k-intelligence/Midm-2.0-Mini-Instruct",
+    api_key=os.getenv("FRIENDLI_TOKEN")
 )
 
 # Define the ProfileAnalysisAgent
