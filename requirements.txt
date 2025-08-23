@@ -5,3 +5,4 @@ requests
 faker
 python-dotenv
 friendli
+langchain-openai
