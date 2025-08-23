@@ -5,7 +5,7 @@ import os
 friendli_llm = LLM(
     model="mistralai/Magistral-Small-2506",
     api_key=os.getenv("FRIENDLI_TOKEN"),
-    api_base="https://api.friendli.ai/serverless/v1/chat/completions"
+    api_base="https://api.friendli.ai/serverless/v1"
 )
 
 # Define the ProfileAnalysisAgent
