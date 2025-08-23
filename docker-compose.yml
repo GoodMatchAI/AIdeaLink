@@ -38,6 +38,7 @@ services:
       - .env
     environment:
       - OPENAI_API_KEY=${FRIENDLI_TOKEN}
+      - PYTHONUNBUFFERED=1
     stdin_open: true
     tty: true
   data-loader:
