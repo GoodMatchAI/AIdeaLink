@@ -6,7 +6,7 @@ import os
 friendli_llm = ChatOpenAI(
     base_url="https://api.friendli.ai/serverless/v1",
     api_key=os.getenv("FRIENDLI_TOKEN"),
-    model="meta-llama-3.1-8b-instruct"
+    model="friendli/meta-llama-3.1-8b-instruct"
 )
 
 # Define the ProfileAnalysisAgent
