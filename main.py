@@ -1,4 +1,11 @@
+import logging
+import httpx
 from src.crew import aidea_link_crew
+
+# Enable httpx logging for debugging
+logging.basicConfig(level=logging.DEBUG)
+logging.getLogger("httpx").setLevel(logging.DEBUG)
+logging.getLogger("httpcore").setLevel(logging.DEBUG)
 
 def main():
     """Main function to run the AIdeaLink crew."""
@@ -11,3 +18,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
